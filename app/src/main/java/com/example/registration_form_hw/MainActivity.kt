@@ -50,9 +50,11 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,"validtion",Toast.LENGTH_LONG).show()
             }
 
+            if (userPassword != userRePassword )
+                password.error = "Password Not Match"
+                return@setOnClickListener
+        }
 
-
-            }
 
 
      }
